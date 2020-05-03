@@ -45,7 +45,13 @@ function main()//--------run main app logic
             e.target.parentElement.remove();
         }
     });
-
+    
+    clearButton.addEventListener("click",function(){
+        const lister=document.querySelectorAll(".task-items");
+        for(let i=0;i<lister.length;i++){
+            lister[i].remove();
+        }
+    });
 }
 
 function createAndAppendChildren()//---create elements and append them to create tree to add to parent
@@ -91,5 +97,7 @@ function displayEror()//display magical error notification
         err.remove();
     }
 }
+
+   
 
 main();
