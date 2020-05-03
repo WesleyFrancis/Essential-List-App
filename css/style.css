@@ -1,0 +1,124 @@
+/*
+    CSS RESET
+*/
+:root /*NOT A SELECTOR*/
+{
+    --main-bg-color:#ededed;
+
+}
+
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*GENERAL Styles */
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.container 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Header styles  */
+header
+{
+    background-color:var(--main-bg-color);
+    padding:16px 0;
+    margin-bottom: 16px;
+}
+
+header h1 
+{
+    font-size:1rem;
+ 
+}
+
+.main-area
+{
+    background-color: var(--main-bg-color);
+    padding:16px 32px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/*Task Area styles*/
+
+#task-list-top-area
+{
+    margin-bottom: 16px;
+}
+
+#task-list-top-area > h2
+{
+    font-size:1rem;
+   
+         
+}
+
+#task-list-top-area > form , #task-list-top-area > h2    
+{
+    display:inline-block;
+}
+
+
+#task-list-top-area > form > input[type="button"]
+{
+    background-color:#5fb761;
+    color:#fff;
+    border-radius: 5px;
+    text-align: center;
+    padding:5px 0px;
+    display: inline-block;
+    width:45px;
+    
+}
+#task-list-top-area > form > input[type="text"]
+{
+    display:inline-block;
+    padding:5px 0px;
+}
+
+
+.task-items
+{
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding:16px;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+
+.task-items > a 
+{
+    justify-self: end;
+    border-radius: 5px;
+    background-color:#da5350;
+    text-decoration: none;
+    color:#fff;
+    display:inline-block;
+    padding:5px;
+
+
+}
+
+
+
+
+
+
+
