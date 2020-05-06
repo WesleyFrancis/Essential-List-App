@@ -7,25 +7,29 @@ const taskListArea =document.querySelector("#task-list-bottom-area");
 
 function main()//--------run main app logic
 {
-    // //check to see if list empty
-    // if(taskListArea.children.length==0)
-    // {
-    //     const listItem= document.createElement("div");
-    //     listItem.setAttribute("class","task-items");
-    //     listItem.innerHTML="There are no lists here";
-    //     taskListArea.appendChild(listItem);
-    // }
-    // //console.log(taskListArea.children[0].firstChild);
-    // if(taskListArea.children)
-    // {
-    //    // taskListArea.children[0].firstChild.remove();
-    //    // taskListArea.children[0].remove();
-    // }
+    //check to see if list empty
+    
+    if(taskListArea.children.length==0)
+    {
+        const listItem= document.createElement("div");
+        listItem.setAttribute("class","task-items");
+        listItem.innerHTML="There are no lists here";
+        taskListArea.appendChild(listItem);
+    }
+    else{
+        taskListArea.children.item(0).remove();
+    }
+    //console.log(taskListArea.children[0].firstChild);
+    if(taskListArea.children.length>1)
+    {
+       taskListArea.children.firstChild.remove();
+    }
 
    //objects to fetch for listeners
     addButton.addEventListener("click",(e)=>{
         //fetch info from item if item is not empty
         //create new divs and append them to create branch
+        console.log(taskListArea.childNodes);
         if(item.value!="")
         {
             //create stuff
